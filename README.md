@@ -121,11 +121,11 @@ This is the simple webpage users interact with.
     {% endif %}
   </body>
 </html>
-
-🚀 Step 6: Run the App Locally
+```
+## 🚀 Step 6: Run the App Locally
 
 To test it on your own computer:
-
+```
 python app.py
 ```
 
