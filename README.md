@@ -60,15 +60,15 @@ youtube_summarizer/
 ```
 
 Your requirements.txt should look like this:
-
+```
 flask
 google-genai
+```
 
-
-Step 4: Backend Code (app.py)
+## Step 4: Backend Code (app.py)
 
 This Python code runs your web server and connects to the Gemini API.
-
+```
 from flask import Flask, render_template, request
 from google import genai
 
@@ -90,11 +90,12 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+```
 
-🌐 Step 5: Frontend Code (templates/index.html)
+## Step 5: Frontend Code (templates/index.html)
 
 This is the simple webpage users interact with.
-
+```
 <!DOCTYPE html>
 <html>
   <head>
@@ -126,57 +127,57 @@ This is the simple webpage users interact with.
 To test it on your own computer:
 
 python app.py
-
+```
 
 Then open your browser and go to:
-
+```
 http://127.0.0.1:5000/
-
+```
 
 Paste any YouTube link, click Summarize, and you’ll see Gemini generate a smart summary!
 
-☁️ Step 7: Deploy to Google Cloud Run
+## Step 7: Deploy to Google Cloud Run
 
 To make your app public and shareable:
 
 Authenticate with your Google account:
-
+```
 gcloud auth login
-
+```
 
 Set your current project:
-
+```
 gcloud config set project <your-project-id>
-
+```
 
 Deploy the app:
-
+```
 gcloud run deploy youtube-summarizer \
   --source . \
   --region us-central1 \
   --allow-unauthenticated
-
+```
 
 Once the deployment finishes, Google Cloud will give you a public URL to access your summarizer.
 
-🧰 Step 8: Customization Ideas
+## Step 8: Customization Ideas
 
 You can improve your summarizer with:
 
-🎨 A better UI using Tailwind CSS or Material UI.
+-> A better UI using Tailwind CSS or Material UI.
 
-🧩 Custom prompts to generate “key moments,” “topic timelines,” or “sentiment analysis.”
+-> Custom prompts to generate “key moments,” “topic timelines,” or “sentiment analysis.”
 
-📊 Integration with your own subtitle or action-detection model (like Whisper) to enhance summaries.
+-> Integration with your own subtitle or action-detection model (like Whisper) to enhance summaries.
 
-💬 Adding an upload option for local video files.
+-> Adding an upload option for local video files.
 
-🧹 Step 9: Clean Up Resources
+## Step 9: Clean Up Resources
 
 When you’re done testing, remember to avoid unnecessary cloud charges:
-
+```
 gcloud run services delete youtube-summarizer
-
+```
 📘 Final Thoughts
 
 That’s it!
