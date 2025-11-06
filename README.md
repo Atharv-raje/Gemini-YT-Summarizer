@@ -122,7 +122,7 @@ This is the simple webpage users interact with.
   </body>
 </html>
 ```
-## 🚀 Step 6: Run the App Locally
+##  Step 6: Run the App Locally
 
 To test it on your own computer:
 ```
@@ -183,5 +183,11 @@ gcloud run services delete youtube-summarizer
 That’s it!
 You’ve built a working AI-powered YouTube summarizer using Google’s Gemini model and deployed it with Flask + Cloud Run.
 
+🧑‍💻 Author
+
+Created by Atharv Raje — for educational purposes and to help developers learn how to integrate Google’s Gemini models into web apps.
+
 If you want to explore this concept in greater depth, check out the official Google Codelab that inspired this tutorial:
-👉 Build a Gemini-Powered YouTube Summarizer (Official Guide)
+👉 Build a Gemini-Powered YouTube Summarizer (Official Guide): https://codelabs.developers.google.com/devsite/codelabs/build-youtube-summarizer#1
+
+
