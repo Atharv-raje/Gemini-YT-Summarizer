@@ -16,7 +16,6 @@ You’ll create a Flask web application that:
 
 This project is great if you want to learn how to integrate **GenAI models** into real-world web apps!
 
----
 
 ##  Step 1: Set Up Google Cloud
 
@@ -33,7 +32,6 @@ Before we code, we need a Google Cloud project.
 
 These APIs allow your app to use Gemini and deploy to the cloud.
 
----
 
 ##  Step 2: Install Required Tools
 
@@ -52,14 +50,14 @@ pip install flask google-genai
  ## Step 3: Project Structure
 
 Create a new folder called youtube_summarizer and inside it, set up these files:
-
+```
 youtube_summarizer/
 │
 ├── app.py
 ├── templates/
 │   └── index.html
 └── requirements.txt
-
+```
 
 Your requirements.txt should look like this:
 
