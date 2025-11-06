@@ -49,7 +49,7 @@ Then install dependencies:
 pip install flask google-genai
 
 
-step 3: Project Structure
+ ## Step 3: Project Structure
 
 Create a new folder called youtube_summarizer and inside it, set up these files:
 
