@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Summarizer</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; }
+      input { width: 60%; padding: 10px; }
+      button { padding: 10px 14px; margin-left: 8px; }
+      .summary { margin-top: 20px; padding: 15px; background: #f5f5f5; border-radius: 10px; }
+    </style>
+  </head>
+  <body>
+    <h2>🎥 YouTube Video Summarizer</h2>
+    <form method="post">
+      <input type="text" name="youtube_url" placeholder="Paste YouTube link here" required />
+      <button type="submit">Summarize</button>
+    </form>
+    {% if summary %}
+      <div class="summary">
+        <h3>🧠 Video Summary:</h3>
+        <p>{{ summary }}</p>
+      </div>
+    {% endif %}
+  </body>
+</html>
